@@ -8,7 +8,7 @@ const stacks = stackArrays.map( stackArray => {
 	const stack = new Stack();
 
 	stackArray.forEach( ele => {
-		stack.addElement(ele);
+		stack.pushElement(ele);
 	});
 
 	return stack;
@@ -21,7 +21,7 @@ stepsInfo.forEach( step => {
 	numberOfElements = parseInt(step[1])
 	for (let i=0; i<numberOfElements; i++) {
 		poppedElement = fromStack.popElement();
-		toStack.addElement(poppedElement);
+		toStack.pushElement(poppedElement);
 	}
 });
 

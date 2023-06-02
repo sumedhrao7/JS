@@ -4,7 +4,7 @@ class Stack {
 		this.stack = []
 	}
 
-	addElement(element) {
+	pushElement(element) {
 		this.stack.push(element);
 	}
 
