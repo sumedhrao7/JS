@@ -1,8 +1,8 @@
 const fs = require("fs")
+const path = require('path')
 
-const inputFilePath = "./advent of code/day4/input.txt"
 const data = fs
-	.readFileSync(inputFilePath, 'utf-8')
+	.readFileSync(path.join(__dirname, 'input.txt'), 'utf-8')
 	.toString()
 	.trim()
 	.split('\n')
